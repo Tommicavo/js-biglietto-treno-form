@@ -7,6 +7,7 @@ const readAge = document.getElementById("readAge");
 const ticketName = document.getElementById("ticketName");
 const ticketPlan = document.getElementById("ticketPlan");
 const ticketWagon = document.getElementById("ticketWagon");
+const ticketCp = document.getElementById("ticketCp");
 const ticketPrice = document.getElementById("ticketPrice");
 const ticketPriceSaled = document.getElementById("ticketPriceSaled");
 
@@ -18,6 +19,12 @@ let mySale = 0;
 let myPlan = "";
 let isSaled = false;
 
+
+back.addEventListener("click", function(){
+    readName.value = "";
+    readKm.value = "";
+    readAge.value = "base"
+});
 
 generate.addEventListener("click", function(){
     const myName = readName.value;
@@ -52,6 +59,9 @@ generate.addEventListener("click", function(){
     ticketName.innerText = myName;
     ticketPlan.innerText = myPlan;
     ticketPrice.innerText = myPrice;
+    ticketWagon.innerText = Math.floor(Math.random() * 20) + 1;
+    ticketCp.innerText = Math.floor(Math.random() * (99999 - 10000 + 1)) + 10000;
+
     if (isSaled){
         ticketPrice.classList.add("text-decoration-line-through");
         ticketPriceSaled.innerText = myPriceSaled;
