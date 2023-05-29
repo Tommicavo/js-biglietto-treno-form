@@ -26,11 +26,11 @@
                         <div class="myCard_top flex justify-content-center gap-3">
                             <div>
                                 <label for="readName">Name:</label><br>
-                                <input type="text" id="readName" placeholder="Write your name" value="">
+                                <input type="text" id="readName" placeholder="Write your name" value="tom">
                             </div>
                             <div>
                                 <label for="readKm">Distance:</label><br>
-                                <input type="text" id="readKm" placeholder="Write your goal distance" value="">
+                                <input type="text" id="readKm" placeholder="Write your goal distance" value="100">
                             </div>
                             <div>
                                 <label for="readAge">Age:</label><br>
@@ -44,12 +44,12 @@
                         </div>
                         <div class="myCard_bottom flex justify-content-center gap-3">
                             <button id="generate">Genera</button>
-                            <button id="back">Annulla</button>
+                            <button id="reset">Reset</button>
                         </div>
                     </div>
                 </div>
                 <!-- Biglietto -->
-                <div class="col-10">
+                <div class="col-10 d-none" id="ticketCol">
                     <h1 class="text-uppercase">il tuo biglietto</h1>
                     <div class="myCard">
                         <h3>dettaglio passeggeri</h3>
@@ -85,32 +85,3 @@
         </div>   
     </body>
 </html>
-
-
-
-
-<!-- <div>
-    <div>
-        <label for="passenger">Write your name:</label><br>
-        <input type="text" id="passenger" placeholder="name">
-    </div>
-    <div>
-        <label for="kilometers">Distance:</label><br>
-        <input type="text" id="kilometers" placeholder="kilometers">
-    </div>
-    <div>
-        <label for="age">Age:</label><br>
-        <select id="age">
-            <option value="young">young (18-)</option>
-            <option value="adult">adult (18+)</option>
-            <option value="elderly">elderly (65+)</option>
-        </select>
-    </div>
-    <button id="generate">Genera</button>
-</div>
-
-<div>
-    <div class="ticketName"></div>
-    <div class="ticketPlan"></div>
-    <div class="ticketPrice"></div>
-</div> -->
