@@ -16,32 +16,100 @@
         <!-- Script -->
         <script defer src="js/script.js"></script>
     </head>
-    <body class="p-5">
-        <div>
-            <div>
-                <label for="passenger">Write your name:</label><br>
-                <input type="text" id="passenger" placeholder="name">
-            </div>
-            <div>
-                <label for="kilometers">Distance:</label><br>
-                <input type="text" id="kilometers" placeholder="kilometers">
-            </div>
-            <div>
-                <label for="kilometers">Age:</label><br>
-                <select name="" id="age">
-                    <option value="young">young (18-)</option>
-                    <option value="adult">adult (18+)</option>
-                    <option value="elderly">elderly (65+)</option>
-                </select>
-            </div>
-            <button id="generate">Genera</button>
-        </div>
+    <body>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <!-- Calcola il prezzo -->
+                <div class="col-10 pb-5">
+                    <h1 class="text-uppercase">calcola il prezzo del tuo biglietto</h1>
+                    <div class="myCard">
+                        <div class="myCard_top flex justify-content-center gap-3">
+                            <div>
+                                <label for="passenger">Write your name:</label><br>
+                                <input type="text" id="passenger" placeholder="name">
+                            </div>
+                            <div>
+                                <label for="kilometers">Distance:</label><br>
+                                <input type="text" id="kilometers" placeholder="kilometers">
+                            </div>
+                            <div>
+                                <label for="age">Age:</label><br>
+                                <select id="age">
+                                    <option value="young">young (18-)</option>
+                                    <option value="adult">adult (18+)</option>
+                                    <option value="elderly">elderly (65+)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="myCard_bottom flex justify-content-center gap-3">
+                            <button id="generate">Genera</button>
+                            <button id="back">Annulla</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Biglietto -->
+                <div class="col-10">
+                    <h1 class="text-uppercase">il tuo biglietto</h1>
+                    <div class="myCard">
+                        <h3>dettaglio passeggeri</h3>
+                        <div class="myCard_content flex gap-3">
+                            <div class="contentLeft">
+                                <div class="ticketLabel">nome passeggero</div>
+                                <div class="ticketName"></div>
+                            </div>
+                            <div class="contentRight flex justify-content-between">
+                                <div>
+                                    <div class="ticketLabel">Offerta</div>
+                                    <div class="ticketPlan"></div>
+                                </div>
+                                <div>
+                                    <div class="ticketLabel">Carrozza</div>
+                                    <div class="ticketWagon">123</div>
+                                </div>
+                                <div>
+                                    <div class="ticketLabel">Codice CP</div>
+                                    <div class="ticketCp">456</div>
+                                </div>
+                                <div>
+                                    <div class="ticketLabel">Costo</div>
+                                    <div class="ticketPrice"></div>
+                                    <div class="ticketPriceSaled"></div>
+                                </div>
+                            </div>
 
-        <div>
-            <div class="ticketName"></div>
-            <div class="ticketPlan"></div>
-            <div class="ticketPrice"></div>
-        </div>
-        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
     </body>
 </html>
+
+
+
+
+<!-- <div>
+    <div>
+        <label for="passenger">Write your name:</label><br>
+        <input type="text" id="passenger" placeholder="name">
+    </div>
+    <div>
+        <label for="kilometers">Distance:</label><br>
+        <input type="text" id="kilometers" placeholder="kilometers">
+    </div>
+    <div>
+        <label for="age">Age:</label><br>
+        <select id="age">
+            <option value="young">young (18-)</option>
+            <option value="adult">adult (18+)</option>
+            <option value="elderly">elderly (65+)</option>
+        </select>
+    </div>
+    <button id="generate">Genera</button>
+</div>
+
+<div>
+    <div class="ticketName"></div>
+    <div class="ticketPlan"></div>
+    <div class="ticketPrice"></div>
+</div> -->
